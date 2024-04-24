@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/admin.css" />
+    <title>admin</title>
+</head>
+
+<body>
+    <section class="form-section">
+        <h3 class="form-heading">Add New Product</h3>
+
+        <form action="/add-product" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="product-name">Product Name</label>
+                <input type="text" name="product-name" id="product-name" />
+            </div>
+
+
+            <div class="form-group">
+                <label for="product-image">Product Image</label>
+                <input type="file" name="product-images" id="product-images" multiple />
+            </div>
+
+            <div class="form-group">
+                <label for="product-description">Product Description</label>
+                <textarea name="product-description" id="product-description" rows="5"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="product-price">spaces</label>
+                <input type="text" name="product-spaces" id="product-spaces" />
+            </div>
+
+            <div class="form-group">
+                <label for="product-rooms">rooms</label>
+                <input type="text" name="product-rooms" id="product-rooms" />
+            </div>
+
+            <div class="form-group">
+                <label for="product-bathrooms">bathrooms</label>
+                <input type="text" name="product-bathrooms" id="product-bathrooms" />
+            </div>
+
+            <div class="form-group">
+                <label for="product-the-role">the role</label>
+                <input type="text" name="product-the-role" id="product-the-role" />
+            </div>
+            <div class="form-group">
+                <label for="product-the-payment">the payment</label>
+                <input type="text" name="product-the-payment" id="product-the-payment" />
+            </div>
+
+            <div class="form-group">
+                <label for="user-name">User name </label>
+                <input type="text" name="user-name" id="user-name" />
+            </div>
+
+            <div class="form-group">
+                <label for="product-category">Product Category</label>
+                <select name="product-category" id="product-category">
+                    <option value="marina-delta">Marina Delta</option>
+                    <option value="marina-lagonze">Marina Lagonze</option>
+                    <option value="blue-beach">Blue Beach</option>
+                    <option value="farma">Farma Beach</option>
+                </select>
+            </div>
+
+            <button type="submit">Add Product</button>
+        </form>
+    </section>
+</body>
+
+</html>

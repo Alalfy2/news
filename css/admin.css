@@ -1,0 +1,76 @@
+/* Overall styling */
+body {
+    /* background-color:aquamarine; */
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Form section */
+.form-section {
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form group */
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Submit button */
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form-group input {
+    transition:ease
+}
+
+.form-group input:hover {
+    box-shadow: 0 1px 3px blue;
+}
+
+/* button {
+    transition: background-color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: white;
+} */
+
+button {
+    transition: transform 0.5s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
